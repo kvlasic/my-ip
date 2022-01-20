@@ -90,7 +90,7 @@ function App() {
           </div>
         </div>
       </div>
-      <div className="map-container container">
+      <div className="container">
         {latitude && (
           <Map defaultCenter={[latitude, longitude]} defaultZoom={11}>
             <Marker width={50} anchor={[latitude, longitude]} />
