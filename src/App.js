@@ -6,6 +6,7 @@ import { DateTime } from "luxon";
 function App() {
   const [ip, setIp] = useState({});
   const [country, setCountry] = useState([]);
+  var dt = DateTime.now();
 
   // promise -> then
   // setBlabla(newValue) - useEffect(()=>[blabla])
@@ -88,6 +89,10 @@ function App() {
             <p>Capital: {country?.capital}</p>
             <p>Currency: {country?.currency}</p>
           </div>
+        </div>
+        <div className="card">
+          <h1>Date and time</h1>
+          <p>{dt.toLocaleString(DateTime.DATETIME_MED)}</p>
         </div>
       </div>
       <div className="container">
